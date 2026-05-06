@@ -148,7 +148,7 @@ with gr.Blocks(title="ELOQUENT - Panel de Contrôle (Lot B)") as app:
             app.load(fn=get_history, inputs=[], outputs=history_table) # Charge au démarrage
 
         # Onglet 3 : Parametres de generation
-        with gr.Tab("### 🎛️ Paramètres de Génération"):
+        with gr.Tab("🎛️ Paramètres de Génération"):
             temperature = gr.Slider(minimum=0.0, maximum=2.0, step=0.1, value=0.0, label="Température (0 = Baseline déterministe)")
             max_tokens = gr.Slider(minimum=10, maximum=500, step=10, value=150, label="Max Tokens (Réponse courte)")
             max_questions = gr.Slider(minimum=5, maximum=500, step=5, value=5, label="Max Questions")
