@@ -3,8 +3,8 @@ import requests
 import time
 import os
 
-# Pointez sur le Mock Server (8001) pour développer, puis passez à 8000 pour la prod.
-API_BASE_URL = "http://localhost:8001"
+# Pointez sur le Mock Server (8000) pour développer, puis passez à 8000 pour la prod.
+API_BASE_URL = "http://localhost:8000"
 
 def fetch_catalogue():
     """Récupère les providers, langues et stratégies depuis le backend."""
